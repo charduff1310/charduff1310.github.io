@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Chicago Field Hockey Club</title>
+    <meta name="viewport" content="width=device-width, intitial-scale=1" />
+    <link rel="stylesheet" href="tourstyle.css" />
+</head>
+<nav class=menu>
+    <img src="images/logo.png" />
+    <h1 id="logo">CFHC</h1>
+    <a id="myBtn" class="dropbtn">&#9776;</a>
+    <ul id="myDropdown" class="dropdown-content">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="membership.html">Membership</a></li>
+        <li><a href="tournaments.html">Tournaments</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+<main>
+    <p>*COMING SOON*</p>
+</main>
+<foot>
+    <script>
+        document.getElementById("myBtn").onclick = function() {
+            myFunction()
+        };
+
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+    </script>
+</foot>

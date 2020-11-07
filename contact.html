@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Chicago Field Hockey Club</title>
+    <meta name="viewport" content="width=device-width, intitial-scale=1" />
+    <link rel="stylesheet" href="contactstyle.css" />
+</head>
+<main>
+<nav class=menu>
+    <img src="images/logo.png" />
+    <h1 id="logo">CFHC</h1>
+    <a id="myBtn" class="dropbtn">&#9776;</a>
+    <ul id="myDropdown" class="dropdown-content">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="membership.html">Membership</a></li>
+        <li><a href="tournaments.html">Tournaments</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+    <div class="blank">
+    </div>
+    <img src="images/back.jpg" />
+    <form>
+        <h2>Contact Us!</h2>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="email">Email:</label><br>
+        <input type="text" id="email" name="email"><br>
+        <label for="level">What is your highest level of competition?</label> <br>
+        <select id="level" name="level">
+            <option value="New">Brand New to Field Hockey!</option>
+            <option value="High School/ Social Club">High School/ Social Club</option>
+            <option value="Collegiate or Competitive Club">Collegiate or Competitive Club</option>
+            <option value="National/ International">National/ International</option>
+        </select> <br>
+        <label for="message">Message:</label><br>
+        <input type="text" id="message" name="message">
+        <input type="submit" value="Submit">
+    </form>
+</main>
+<foot>
+    <script>
+        document.getElementById("myBtn").onclick = function() {
+            myFunction()
+        };
+
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+    </script>
+</foot>

@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css?family=Rubik:400,400i,500,500i,700,700i&display=swap");
+
+* {
+    margin: 0px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    border-bottom: 40px solid;
+    background-color: white;
+    border-bottom-color: #E8F8FF;
+    border-top: 40px solid;
+    border-top-color: #E8F8FF;
+}
+
+ul {
+    list-style: none;
+}
+
+nav li {
+    margin: 20px;
+    font-family: "Rubik";
+    text-decoration: none;
+    color: #212A49;
+}
+
+li a {
+    text-decoration: none;
+    font-family: "Rubik";
+    text-decoration: none;
+    color: #212A49;
+}
+
+li a:hover {
+    color: #FC4B60;
+}
+
+
+#logo {
+    position: absolute;
+    left: 130px;
+    top: 60px;
+}
+
+nav img {
+    width: 120px;
+    height: 120px;
+    overflow: visible;
+    position: absolute;
+    left: 30px;
+    top: 20px;
+}
+
+.calendar {
+    width: 100%;
+    height: 30%;
+    background-color: #212A49;
+}
+
+.info {
+    padding-top: 50px;
+    width: 100%;
+    font-size: 20px;
+    padding-bottom: 50px;
+    border-bottom: 30px solid;
+    border-bottom-color: #E8F8FF;
+    background-color: #212A49;
+}
+
+.info h3 {
+    font-family: "Rubik";
+    margin-top: 40px;
+    margin-left: 10%;
+    margin-right: 10%;
+    align-content: center;
+    color: white;
+}
+
+.info ul {
+    margin-left: 10%;
+    font-family: "Rubik";
+    color: white;
+}
+
+p {
+    font-family: "Rubik";
+    color: #212A49;
+    font-size: 22px;
+    padding-top: 30px;
+    margin-bottom: 20px;
+    margin-right: 90px;
+}
+
+.mapouter {
+    background-color: white;
+    height: 450px;
+    border-bottom: 30px solid;
+    border-bottom-color: #E8F8FF;
+    margin-top: 50px;
+}
+
+.calendar {
+    width: 100%;
+    padding-bottom: 50px;
+    padding-top: 100px;
+}
+
+.calendar iframe {
+    align-content: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    width: 60%;
+    margin-bottom: 100px;
+    border-radius: 3px;
+}
+
+iframe {
+    border-radius: 2px;
+}
+
+.gmap_canvas iframe {
+    height: 400px;
+    width: 500px;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none;
+    height: 300px;
+    text-align: right;
+    float: left;
+    margin-top: 0px;
+    margin-left: 100px;
+    margin-right: 80px;
+    height: 450px;
+}
+
+.blank {
+    height: 40px;
+    background-color: #E8F8FF;
+    border-bottom: 20px solid #E8F8FF;
+}
+
+#myBtn {
+    display: none;
+}
+
+@media only screen and (max-width: 906px) {
+
+    .show {
+        flex-direction: column;
+        background-color: white;
+        height: 335px;
+        width: 100%;
+        visibility: visible;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding: 0px;
+    }
+
+    #myBtn {
+        padding: 15px;
+        float: top;
+        display: inline-block;
+        background: white;
+        color: black;
+        font-size: 22px;
+        transition: color linear 0.15s;
+        border: none;
+        top: 10px;
+        right: 10px;
+        position: absolute;
+    }
+
+    #myBtn:hover,
+    #myBtn.show {
+        text-decoration: none;
+        color: #E8F8FF;
+        cursor: pointer;
+    }
+
+    nav {
+        background-color: white;
+    }
+
+    nav ul {
+        visibility: hidden;
+        height: 30px;
+        padding: 0px;
+        margin: 0px;
+        border: none;
+    }
+
+    nav li {
+        padding-top: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        padding-left: 40px;
+        margin: 0px;
+        border-bottom: 0.05px solid;
+
+    }
+
+    nav img {
+        visibility: hidden;
+    }
+
+    #logo {
+        left: 0px;
+        top: 20px;
+        background-color: white;
+        height: 30px;
+        padding-left: 40px;
+        padding-top: 10px;
+        padding-bottom: 15px;
+        position: relative;
+
+    }
+
+    main {
+        width: 100%;
+    }
+
+    .gmap_canvas {
+        overflow: hidden;
+        width: 96%;
+        margin: 2%;
+        padding: 0px;
+        position: relative;
+    }
+
+    .gmap_canvas iframe {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .mapouter {
+        position: relative;
+        width: 100%;
+        height: 680px;
+    }
+
+    p {
+        margin: 30px;
+        padding: 0px;
+    }
+
+    .calendar {
+        margin: 0px;
+        padding-top: 30px;
+    }
+
+    .calendar iframe {
+        width: 90%;
+        margin: 5%;
+        padding: 0px;
+    }
+
+}

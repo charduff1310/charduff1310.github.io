@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>CFHC Membership</title>
+    <meta name="viewport" content="width=device-width, intitial-scale=1" />
+    <link rel="stylesheet" href="memberstyle.css" />
+</head>
+<main>
+    <nav class=menu>
+        <img src="images/logo.png" />
+        <h1 id="logo">CFHC</h1>
+        <a id="myBtn" class="dropbtn">&#9776;</a>
+        <ul id="myDropdown" class="dropdown-content">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="membership.html">Membership</a></li>
+            <li><a href="tournaments.html">Tournaments</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <section class="info">
+        <h1>Membership</h1>
+        <h2>JOIN NOW</h2>
+        <p>We welcome new members and look forward to connecting with you. </p>
+        <p>Please take care of the following items before coming out to play:</p>
+        <ul>
+            <li>Join our <a href="https://www.facebook.com/pages/category/Amateur-Sports-Team/Chicago-Field-Hockey-Club-284934234853283/" target="_blank">facebook page</a> to stay up to date on all news and events.</li>
+            <li>Register your contact information to receive tournament updates and sign-up polls. </li>
+            <li>Pay before you play and please include your name and email address for registration purposes. </li>
+        </ul>
+        <p>There are three different ways to play: indoor (choose Season I, II, or both), outdoor season, and a combination of both. Alternatively, you can also play on a day pass for $20.</p>
+    </section>
+    <section class="gallery">
+        <div class="CSSgal">
+            <s id="pic1"></s>
+            <s id="pic2"></s>
+            <s id="pic3"></s>
+            <s id="pic4"></s>
+
+            <div class="slider">
+                <div> <img src="images/CFHC%20Berkeley%202019.jpg" />
+                </div>
+                <div> <img src="images/CFHC%20Dinner%20Kama%20Bistro.jpg" />
+                </div>
+                <div> <img src="images/CFHC%20Champions%202018.jpg" />
+                </div>
+                <div> <img src="images/IMG_4979.jpg" />
+                </div>
+            </div>
+
+            <div class="prevNext">
+                <div><a href="#pic4"></a><a href="#pic2"></a></div>
+                <div><a href="#pic1"></a><a href="#pic3"></a></div>
+                <div><a href="#pic2"></a><a href="#pic4"></a></div>
+                <div><a href="#pic3"></a><a href="#pic1"></a></div>
+            </div>
+
+            <div class="bullets">
+                <a href="#pic1"></a>
+                <a href="#pic2"></a>
+                <a href="#pic3"></a>
+                <a href="#pic4"></a>
+            </div>
+        </div>
+    </section>
+</main>
+<foot>
+    <script>
+        document.getElementById("myBtn").onclick = function() {
+            myFunction()
+        };
+
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+    </script>
+</foot>

@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css?family=Rubik:400,400i,500,500i,700,700i&display=swap");
+
+* {
+    margin: 0px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    border-bottom: 40px solid;
+    background-color: white;
+    border-bottom-color: #E8F8FF;
+    border-top: 40px solid;
+    border-top-color: #E8F8FF;
+}
+
+ul {
+    list-style: none;
+}
+
+nav li {
+    margin: 20px;
+    font-family: "Rubik";
+    text-decoration: none;
+    color: #212A49;
+}
+
+li a {
+    text-decoration: none;
+    font-family: "Rubik";
+    text-decoration: none;
+    color: #212A49;
+}
+
+li a:hover {
+    color: #FC4B60;
+}
+
+main {
+    background-color: #212A49;
+    width: 100%;
+}
+
+#logo {
+    position: absolute;
+    left: 130px;
+    top: 60px;
+}
+
+nav img {
+    width: 120px;
+    height: 120px;
+    overflow: visible;
+    position: absolute;
+    left: 30px;
+    top: 20px;
+}
+
+img {
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+form {
+    position: relative;
+    z-index: 2;
+    width: 500px;
+    background-image: url(images/formback.jpg);
+    color: #212A49;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-family: "Rubik";
+    align-content: center;
+    height: 680px;
+    border-radius: 10px;
+    padding-top: 6%;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2 {
+    margin-bottom: 35px;
+    font-size: 40px;
+}
+
+.color {
+    background-color: #E8F8FF;
+}
+
+input[type=text],
+select {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 5px;
+    margin-bottom: 40px;
+    margin-top: 12px;
+    font-size: 1em;
+}
+
+.blank {
+    color: #E8F8FF;
+    height: 150px;
+}
+
+#name {
+    width: 50%;
+}
+
+#email {
+    width: 50%;
+}
+
+#message {
+    resize: vertical;
+    width: 100%;
+    padding: 12px;
+    height: 100px;
+}
+
+
+input[type=select] {
+    width: 60%;
+    height: 25px;
+    padding: 4px;
+}
+
+input[type=submit] {
+    border-radius: 4px;
+    cursor: pointer;
+    width: 15%;
+    height: 30px;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: #212A49;
+    color: white;
+}
+
+
+#myBtn {
+    display: none;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    main img {
+        margin-top: 200px;
+    }
+
+    .show {
+        flex-direction: column;
+        background-color: white;
+        height: 335px;
+        width: 100%;
+        visibility: visible;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    }
+
+    #myBtn {
+        padding: 15px;
+        float: top;
+        display: inline-block;
+        background: white;
+        color: black;
+        font-size: 22px;
+        transition: color linear 0.15s;
+        border: none;
+        top: 10px;
+        right: 10px;
+        position: absolute;
+    }
+
+    #myBtn:hover,
+    #myBtn.show {
+        text-decoration: none;
+        color: #E8F8FF;
+        cursor: pointer;
+    }
+
+    nav {
+        background-color: white;
+    }
+
+    nav ul {
+        visibility: hidden;
+        height: 30px;
+        padding: 0px;
+        margin: 0px;
+        border: none;
+    }
+
+    nav li {
+        padding-top: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        padding-left: 40px;
+        margin: 0px;
+        border-bottom: 0.05px solid;
+
+    }
+
+    nav img {
+        visibility: hidden;
+    }
+
+    #logo {
+        left: 0px;
+        top: 20px;
+        background-color: white;
+        height: 30px;
+        padding-left: 40px;
+        padding-top: 10px;
+        padding-bottom: 15px;
+        position: relative;
+
+    }
+
+@media only screen and (max-width: 800px) {
+
+
+    form {
+        width: 90%;
+        margin-top: 0px;
+    }
+
+    .blank {
+        height: 15px;
+    }
+
+    #name {
+        width: 100%;
+    }
+
+    #email {
+        width: 100%;
+    }
+
+    input[type=select] {
+        width: 100%;
+    }
+
+    input[type=submit] {
+        width: 100%;
+    }
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Chicago Field Hockey Club</title>
+    <meta name="viewport" content="width=device-width, intitial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<nav class=menu>
+    <img src="images/logo.png"/>
+    <h1 id="logo">CFHC</h1>
+    <a id="myBtn" class="dropbtn">&#9776;</a>
+    <ul id="myDropdown" class="dropdown-content">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="membership.html">Membership</a></li>
+        <li><a href="tournaments.html">Tournaments</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+<main>
+    <section class="hero">
+        <img src="images/action.jpg" />
+    </section>
+    <ul class="container" data-layoutmethod="flexbox">
+        <a href="membership.html">
+            <li class="box1">
+                <div class="card-image-bucket">
+                    <div class="card-image">
+                        <img src="images/cagepic.jpg" />
+                    </div>
+                </div>
+                <h3>MEMBERSHIP</h3>
+            </li>
+        </a>
+        <a href="tournaments.html">
+            <li class="box2">
+                <div class="card-image-bucket">
+                    <div class="card-image">
+                        <img src="images/standing.jpg" />
+                    </div>
+                </div>
+                <h3>TOURNAMENTS</h3>
+            </li>
+        </a>
+        <a href="schedule.html">
+            <li class="box3">
+                <div class="card-image-bucket">
+                    <div class="card-image">
+                        <img src="images/CFHC%20Chicago%20cup%202019.jpg" />
+                    </div>
+                </div>
+                <h3>SCHEDULE</h3>
+            </li>
+        </a>
+        <a href="contact.html">
+            <li class="box4">
+                <div class="card-image-bucket">
+                    <div class="card-image">
+                        <img src="images/CFHC%20Wing%20Tasting.jpg" />
+                    </div>
+                </div>
+                <h3>CONTACT</h3>
+            </li>
+        </a>
+    </ul>
+    <section class="info">
+        <h2>Welcome!</h2>
+        <p>Welcome to the Chicago Field Hockey Club. We're glad you're here.</p>
+        <p>We are a friendly, local club which welcomes all ages and abilities for social and competitive hockey. We are a diverse group from all over the world. </p>
+        <p>Currently, the club runs a robust indoor league in the winter, plays in men's/women's and coed tournaments, and partners with the Northwestern Field Hockey Club for pickup hockey in the spring and summer.</p>
+        <p>Check out our <a href="membership.html">membership page</a> to see which CFHC offerings fit you best. </p>
+    </section>
+</main>
+<foot>
+    <script>
+        document.getElementById("myBtn").onclick = function() {
+            myFunction()
+        };
+
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+    </script>
+</foot>
